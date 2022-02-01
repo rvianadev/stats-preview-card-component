@@ -1,0 +1,97 @@
+@import './normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+  /* Primary */
+  --very-dark-blue: hsl(233, 47%, 7%); /* main background */
+  --dark-desaturated-blue: hsl(244, 38%, 16%); /* card background */
+  --soft-violet: hsl(277, 64%, 61%); /* accent */
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%); /* main heading, stats */
+  --slightly-transparent-white-1: hsla(0, 0%, 100%, 0.75); /* main paragraph */
+  --slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6); /* stat headings */
+}
+
+/*
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
+
+*/
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Inter', sans-serif;
+
+  background: var(--very-dark-blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  height: 445px;
+  width: 1110px;
+
+  background: var(--dark-desaturated-blue);
+
+  display: flex;
+
+  border-radius: 10px;
+}
+
+.text-container {
+  width: 570px;
+}
+
+.text-container h1,
+h2 {
+  color: var(--white);
+  margin: 0;
+}
+
+.text-container h1 span {
+  color: var(--soft-violet);
+}
+
+.text-container p,
+small {
+  color: var(--slightly-transparent-white-1);
+}
+
+.text-container small {
+  text-transform: uppercase;
+}
+
+.text-container ul {
+  list-style: none;
+
+  display: flex;
+}
+
+.image-container {
+  width: 540px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 0 10px 10px 0;
+}
+
+.attribution {
+  position: absolute;
+
+  bottom: 0;
+
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
