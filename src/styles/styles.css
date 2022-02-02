@@ -196,4 +196,8 @@ small {
     flex-direction: column;
     
   }
+
+  .text-container li {
+    padding-bottom: 35px;
+  }
 }
