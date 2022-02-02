@@ -121,14 +121,43 @@ small {
 }
 
 .attribution {
-  position: absolute;
+  position: fixed;
 
   bottom: 0;
 
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
+
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--slightly-transparent-white-1);
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Medias queries */
+
+@media (max-width: 1110px) {
+  body {
+    flex-direction: column;
+  }
+
+  .main-container {
+    height: 956px;
+    width: 375px;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    border-radius: 10px;
+  }
+
+  .image-container {
+    width: 375px;
+  }
+
+  .image-container img {
+    border-radius: 0;
+  }
 }
