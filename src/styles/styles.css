@@ -145,19 +145,55 @@ small {
 
   .main-container {
     height: 956px;
-    width: 375px;
+    width: 327px;
 
     display: flex;
     flex-direction: column-reverse;
+    justify-content: flex-end;
 
     border-radius: 10px;
   }
 
-  .image-container {
-    width: 375px;
+  .image-container,
+  .text-container {
+    width: 327px;
   }
 
   .image-container img {
     border-radius: 0;
+
+    border-radius: 10px 10px 0 0;
+  }
+
+  .text-container h1,
+  .text-container p,
+  .text-container ul {
+    padding: 0;
+  }
+
+  .text-container {
+    text-align: center;
+  }
+
+  .text-container h1 {
+    padding-top: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .text-container p {
+    padding-top: 21px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .text-container ul {
+    padding-top: 50px;
+
+    flex-direction: column;
+    
   }
 }
